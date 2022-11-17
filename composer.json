@@ -1,0 +1,18 @@
+{
+    "name": "diene/auth",
+    "description": "Mise en pratique des notions apprises en php en implémentant l'architecture MVC",
+    "type": "project",
+    "license": "DWWM",
+    "authors": [
+        {
+            "name": "DIENEAntoine",
+            "email": "diene1antoine@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": ["src/z/helpers.php"]
+    }
+
+}
