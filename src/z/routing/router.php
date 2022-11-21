@@ -87,6 +87,7 @@ declare(strict_types=1);
             $pattern = preg_replace("#{[a-z]+}#", "([0-9a-zA-Z-_])", $request_route);
             $pattern = "#^$pattern$#";
 
+            
             if (preg_match($pattern, $request_uri, $matches)) 
             {
                 array_shift($matches);

@@ -1,17 +1,17 @@
 <?php
 
-    function dd($data)
-    {
-        echo "<pre>";
-        var_dump($data);
-        echo "</pre>";
+    // function dd($data)
+    // {
+    //     echo "<pre>";
+    //     var_dump($data);
+    //     echo "</pre>";
 
-        die();
-    }
+    //     die();
+    // }
 
-    function dump($data)
-    {
-        echo "<pre>";
-        var_dump($data);
-        echo "</pre>";
-    }
+    // function dump($data)
+    // {
+    //     echo "<pre>";
+    //     var_dump($data);
+    //     echo "</pre>";
+    // }

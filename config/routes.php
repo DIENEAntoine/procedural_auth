@@ -1,8 +1,6 @@
 <?php
 
 
-    get("/", ["welcomeController", "index"]);
+    get("/", ["visitor/welcome/welcomeController", "index"]);
 
-    get("/edit/{id}", ["welcomeController", "edit"]);
-
-    get("/create", ["welcomeController", "create"]);
+    get("/register", ["visitor/registration/registrationController", "register"]);

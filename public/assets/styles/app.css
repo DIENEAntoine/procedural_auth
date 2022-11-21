@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer {
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1)
+    ;
+}
+
+.navbar-brand {
+    font-family: 'Rubik Distressed', cursive;
+}
