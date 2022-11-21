@@ -8,11 +8,15 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+.navbar-brand, footer {
+    font-family: 'Rubik Distressed', cursive;
+}
+
+.active{
+    color: blue !important;
+}
+
 footer {
     box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1)
     ;
-}
-
-.navbar-brand {
-    font-family: 'Rubik Distressed', cursive;
 }
