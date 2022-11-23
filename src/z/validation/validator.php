@@ -89,12 +89,28 @@ declare(strict_types=1);
     }
 
     /**
+     * Cette fonction permet de recupérer les données provenant du formilaire qui ont mis au propre.
+     *
+     * @param array $data
+     * @return array
+     */
+    function old_values(array $data) : array
+    {
+        $data_clean = [];
+        $data_clean = xssProtection($data);
+
+        return $data_clean;
+    }
+
+
+    /**
      * Cette fonction vérifie si la valeur actuelle correspond à la valeur de l'input dont
      * ont souhaite effectuer la comparaison.
      *
      * @param string $value
      * @param string $rule
      * @param array $data_clean
+     * 
      * @return boolean
      */
     function same_(string $value, string $rule, array $data_clean) : bool
@@ -158,7 +174,8 @@ declare(strict_types=1);
         $req->execute();
         $row = $req->rowCount();
         
-        if ($row != 1) {
+        if ($row == 1) 
+        {
             return true;
         }
         return false;

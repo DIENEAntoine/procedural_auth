@@ -33,3 +33,9 @@
 
     // Ce raccoucu représente la connexion à la base de données
     const DB = __DIR__ . "/database.php";
+
+    // Ce raccoucu représente le manager de la table "user"
+    const USER = ROOT . "/src/manager/user.php";
+
+    // Ce raccoucu représente l'authentificateur
+    const AUTHENTICATOR = ROOT . "/src/security/authenticator.php";

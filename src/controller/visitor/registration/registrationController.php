@@ -65,10 +65,18 @@ require ABSTRACT_CONTROLLER;
 
             if (count($errors) > 0) 
             {
+                $_SESSION['errors'] = $errors;
+                $_SESSION['old'] = old_values($_POST);
                 return header("Location: " . $_SERVER['HTPP_REFERER']);
             }
 
-            dd($error);
+            //Appel du manager de la table User
+            require USER;
+
+            $post_clean = old_values($_POST);
+            createUser($post_clean);
+
+            return redirect_to_url("/login");
         }
 
         return render("pages/visitor/registration/register.html.php");
